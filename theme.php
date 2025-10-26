@@ -9,16 +9,24 @@ $height = 100;
 $subtitle = "";
 $type = "";
 $readMore = "";
+$logo = "";
 
 if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 	$subtitle = $Wcms->page('content');
 } else {
-	// Check if image for this page exisis
+	// Check if image for this page exists
 	if(isset($Wcms->get("pages", $Wcms->currentPage)->background) && $Wcms->get("pages", $Wcms->currentPage)->background != "") {
 		$page_image = "data/files/" . $Wcms->get("pages", $Wcms->currentPage)->background;
 	}
 
 	$height = isset($Wcms->get('pages', $Wcms->currentPage)->themeHeaderHeight) ? $Wcms->get('pages', $Wcms->currentPage)->themeHeaderHeight : 100;
+
+	// Get logo from page settings if set, otherwise use default
+	if(isset($Wcms->get("pages", $Wcms->currentPage)->logo) && $Wcms->get("pages", $Wcms->currentPage)->logo != "") {
+		$logo = "data/files/" . $Wcms->get("pages", $Wcms->currentPage)->logo;
+	} else {
+		$logo = $Wcms->asset('images/default.jpg');
+	}
 
 	// $heading = getEditableArea("heading", $Wcms->page('title'));
 	// $subtitle = getEditableArea("subtitle", "");
@@ -69,6 +77,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="<?=$Wcms->url()?>">
+					<img src="<?=$logo?>" alt="Logo" style="height: 30px; margin-right: 10px; display: inline-block;">
 					<?=$Wcms->get('config','siteTitle')?>
 				</a>
 			</div>
