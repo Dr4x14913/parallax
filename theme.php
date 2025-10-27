@@ -135,13 +135,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 			<br><br><br>
 		</div>
 	</footer>
-
-	<?php
-		if(!$Wcms->loggedIn) {
-			echo "<script src='https://code.jquery.com/jquery-1.12.4.min.js' integrity='sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ' crossorigin='anonymous'></script>";
-		}
-	?>
-	
+	<script src='https://code.jquery.com/jquery-1.12.4.min.js' integrity='sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ' crossorigin='anonymous'></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 	<?=$Wcms->js()?>
 

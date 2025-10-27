@@ -187,9 +187,6 @@ function alterAdmin($args) {
 	    $option->setAttribute("value", $file);
 		$option->nodeValue = $file;
 
-		if(isset($Wcms->get("pages", $Wcms->menu)->logo) && $Wcms->get("pages", $Wcms->menu)->logo == $file)
-			$option->setAttribute("selected", "selected");
-
 		$input->appendChild($option);
 	}
 
