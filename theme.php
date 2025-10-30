@@ -78,8 +78,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="<?=$Wcms->url()?>">
-					<img src="<?=$logo?>" alt="Logo" style="height: 30px; margin-right: 10px; display: inline-block;">
-					<?=$Wcms->get('config','siteTitle')?>
+					<img src="<?=$logo?>" alt="Logo" style="height: 90px; margin-right: 10px; display: inline-block;">
 				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

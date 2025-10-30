@@ -32,7 +32,8 @@
     }
 
     .navbar-default {
-        background: transparent;
+        /*background: transparent;*/
+        background: rgba(40, 40, 40, 0.5);
         border: 0;
         margin: 0;
         position: absolute;
@@ -46,6 +47,39 @@
 
 /* Navigation */
 
+    .nav-item {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .navbar-default .navbar-nav > li > a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 15px 15px;
+        font-size: 25px;
+        line-height: 1;
+    }
+    .navbar-default .navbar-nav > li {
+        height: 100%;
+    }
+    .navbar-default .navbar-nav {
+        height: 100%;
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-brand img {
+        max-height: 80%; /* This ensures it fits within navbar height */
+        width: auto;
+        display: inline-block;
+        margin-right: 10px;
+    }
     nav.navbar-default , #adminPanel {
         position: absolute;
 
