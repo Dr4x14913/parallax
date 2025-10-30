@@ -169,7 +169,7 @@ function alterAdmin($args) {
 
     $input = $doc->createElement("select");
     $input->setAttribute("class", "form-control");
-    $input->setAttribute("onchange", "fieldSaveParallax('logo',this.value,'pages');");
+    $input->setAttribute("onchange", "fieldSaveParallax('logo',this.value,'config');");
     $input->setAttribute("name", "logoSelect");
 
 	$option = $doc->createElement("option");

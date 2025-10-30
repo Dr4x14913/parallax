@@ -22,8 +22,8 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 	$height = isset($Wcms->get('pages', $Wcms->currentPage)->themeHeaderHeight) ? $Wcms->get('pages', $Wcms->currentPage)->themeHeaderHeight : 100;
 
 	// Get logo from page settings if set, otherwise use default
-	if(isset($Wcms->get("pages", $Wcms->currentPage)->logo) && $Wcms->get("pages", $Wcms->currentPage)->logo != "") {
-		$logo = "data/files/" . $Wcms->get("pages", $Wcms->currentPage)->logo;
+	if($Wcms->get("config", "logo") !== null && $Wcms->get("config", "logo") != "") {
+		$logo = "data/files/" . $Wcms->get("config", "logo");
 	} else {
 		$logo = $Wcms->asset('images/default.jpg');
 	}
