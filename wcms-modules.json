@@ -3,11 +3,11 @@
     "themes": {
         "parallax": {
             "name": "Parallax",
-            "repo": "https://github.com/robiso/parallax/tree/master",
-            "zip": "https://github.com/robiso/parallax/archive/master.zip",
-            "summary": "One of the most advanced WonderCMS themes created by @StephanStanisic.",
-            "version": "3.2.3",
-            "image": "https://raw.githubusercontent.com/robiso/parallax/master/preview.jpg"
+            "repo": "https://github.com/Dr4x14913/parallax/tree/master",
+            "zip": "https://github.com/Dr4x14913/parallax/archive/master.zip",
+            "summary": "Custom theme build upon the official parallax theme",
+            "version": "3.5.0",
+            "image": "https://raw.githubusercontent.com/Dr4x14913/parallax/master/preview.jpg"
         }
     }
 }
