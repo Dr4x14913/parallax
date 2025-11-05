@@ -43,7 +43,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 -->
 <html lang="en">
 <head>
-	
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -108,7 +108,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 
 	<?php if($Wcms->currentPage != $Wcms->get('config', 'login')): ?>
 
-	<div class="container" id="content">
+	<div class="" id="content">
 		<div class="row">
 			<div class="col-lg-12 text-center padding40">
 				<?=$Wcms->page('content')?>

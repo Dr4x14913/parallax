@@ -55,8 +55,8 @@
         display: flex;
         align-items: center;
         height: 100%;
-        padding: 15px 15px;
-        font-size: 25px;
+        padding: 20px 10px;
+        font-size: 18px;
         line-height: 1;
     }
     .navbar-default .navbar-nav > li {
@@ -384,9 +384,14 @@
 /* Content */
 
     #content {
-        padding: 10em 0;
+        padding: 4em 5vw;
     }
 
+    @media (max-width: 768px) {
+        #content {
+            padding: 4em 2vw;
+        }
+    }
 
 
 /* Elements */
