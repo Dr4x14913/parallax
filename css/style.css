@@ -331,9 +331,13 @@
 
         text-align: center;
 
-        background-position: center;
+        background-position: center top;
         background-size: cover;
         text-shadow: 0 0 1em #000;
+    }
+
+    .parallax .inner {
+	padding: 20px;
     }
 
     .parallax .inner h1,
@@ -355,6 +359,23 @@
     .parallax .inner .note-editable {
         font-size: 1.2em;
         line-height: 2;
+    }
+
+    @media (max-width: 768px) {
+        .parallax .inner {
+            padding: 15px; /* Slightly tighter but still safe */
+        }
+    
+        .parallax .inner h1 {
+            font-size: 5em; /* Much smaller on mobile */
+        }
+    
+        .parallax .inner p,
+        .parallax .inner .note-editable,
+        .parallax .inner .editText {
+            font-size: 1em; /* Slightly smaller paragraph text */
+            line-height: 1.6;
+        }
     }
 
     .parallax .scrolly {
